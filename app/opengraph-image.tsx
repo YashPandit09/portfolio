@@ -15,14 +15,14 @@ export default function Image() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          background: '#0A0E1A',
+          background: '#0D1117',
           backgroundImage:
-            'radial-gradient(circle at 18% 22%, rgba(0,217,255,0.18), transparent 42%), radial-gradient(circle at 85% 78%, rgba(124,58,237,0.22), transparent 45%)',
+            'radial-gradient(circle at 18% 22%, rgba(88,166,255,0.18), transparent 42%), radial-gradient(circle at 85% 78%, rgba(121,192,255,0.22), transparent 45%)',
           padding: '72px 80px',
           fontFamily: 'monospace',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', color: '#00D9FF', fontSize: 30 }}>
+        <div style={{ display: 'flex', alignItems: 'center', color: '#58A6FF', fontSize: 30 }}>
           {'> whoami'}
         </div>
 
@@ -30,10 +30,10 @@ export default function Image() {
           <div style={{ display: 'flex', color: '#8b95a7', fontSize: 34, marginBottom: 14 }}>
             Hi, I&apos;m
           </div>
-          <div style={{ display: 'flex', color: '#E8EAED', fontSize: 96, fontWeight: 700, lineHeight: 1 }}>
+          <div style={{ display: 'flex', color: '#F0F6FC', fontSize: 96, fontWeight: 700, lineHeight: 1 }}>
             {SITE.name}
           </div>
-          <div style={{ display: 'flex', color: '#00D9FF', fontSize: 46, marginTop: 20 }}>
+          <div style={{ display: 'flex', color: '#58A6FF', fontSize: 46, marginTop: 20 }}>
             AI &amp; Full-Stack Developer
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Image() {
           }}
         >
           <div style={{ display: 'flex' }}>B.Tech @ Universal AI University</div>
-          <div style={{ display: 'flex', color: '#7C3AED' }}>{'<YP />'}</div>
+          <div style={{ display: 'flex', color: '#79C0FF' }}>{'<YP />'}</div>
         </div>
       </div>
     ),

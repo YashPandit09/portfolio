@@ -23,22 +23,22 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          background: '#0A0E1A',
+          background: '#0D1117',
           backgroundImage:
-            'radial-gradient(circle at 18% 20%, rgba(0,217,255,0.18), transparent 42%), radial-gradient(circle at 85% 80%, rgba(124,58,237,0.22), transparent 45%)',
+            'radial-gradient(circle at 18% 20%, rgba(88,166,255,0.18), transparent 42%), radial-gradient(circle at 85% 80%, rgba(121,192,255,0.22), transparent 45%)',
           padding: '72px 80px',
           fontFamily: 'monospace',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', color: '#00D9FF', fontSize: 30 }}>
+        <div style={{ display: 'flex', alignItems: 'center', color: '#58A6FF', fontSize: 30 }}>
           {project ? `// project ${project.number}` : '// project'}
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <div style={{ display: 'flex', color: '#E8EAED', fontSize: 82, fontWeight: 700, lineHeight: 1.05 }}>
+          <div style={{ display: 'flex', color: '#F0F6FC', fontSize: 82, fontWeight: 700, lineHeight: 1.05 }}>
             {project ? project.title : 'Project'}
           </div>
-          <div style={{ display: 'flex', color: '#00D9FF', fontSize: 40, marginTop: 18 }}>
+          <div style={{ display: 'flex', color: '#58A6FF', fontSize: 40, marginTop: 18 }}>
             {project ? project.tagline : ''}
           </div>
           {project && (
@@ -50,7 +50,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
                     display: 'flex',
                     color: '#cbd3e0',
                     fontSize: 24,
-                    border: '1px solid rgba(0,217,255,0.35)',
+                    border: '1px solid rgba(88,166,255,0.35)',
                     borderRadius: 8,
                     padding: '8px 16px',
                   }}
@@ -74,7 +74,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           }}
         >
           <div style={{ display: 'flex' }}>{SITE.name}</div>
-          <div style={{ display: 'flex', color: '#7C3AED' }}>{'<YP />'}</div>
+          <div style={{ display: 'flex', color: '#79C0FF' }}>{'<YP />'}</div>
         </div>
       </div>
     ),

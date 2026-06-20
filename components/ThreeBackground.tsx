@@ -54,7 +54,7 @@ function Particles({ count = 200 }: { count?: number }) {
       <bufferGeometry>
         <bufferAttribute attach="attributes-position" args={[positions, 3]} />
       </bufferGeometry>
-      <pointsMaterial size={0.04} color="#00D9FF" transparent opacity={0.6} sizeAttenuation />
+      <pointsMaterial size={0.04} color="#58A6FF" transparent opacity={0.6} sizeAttenuation />
     </points>
   );
 }
@@ -72,7 +72,7 @@ export default function ThreeBackground() {
   if (!show) {
     return (
       <div className="hero-bg" style={{
-        background: 'radial-gradient(ellipse at 30% 50%, rgba(0, 217, 255, 0.08) 0%, transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%)'
+        background: 'radial-gradient(ellipse at 30% 50%, rgba(88, 166, 255, 0.08) 0%, transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(121, 192, 255, 0.06) 0%, transparent 50%)'
       }} />
     );
   }
