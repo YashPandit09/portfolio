@@ -22,7 +22,6 @@ function SkillCard({ cat, i }: { cat: SkillCategory; i: number }) {
       onHoverStart={() => setOpen(true)}
       onHoverEnd={() => setOpen(false)}
     >
-      <div className="skill-card-icon">{cat.icon}</div>
       <h3>{cat.title}</h3>
       <p>{cat.description}</p>
       {/* Accessible plain list of the skills (the visual deck is aria-hidden). */}

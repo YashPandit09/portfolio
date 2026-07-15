@@ -8,9 +8,9 @@ export interface Project {
   approach: string;
   outcome: string;
   stack: string[];
-  githubUrl: string;
+  githubUrl: string | null;
   demoUrl: string | null;
-  image: string;
+  image: string | null;
 }
 
 export const projects: Project[] = [
@@ -85,5 +85,41 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/YashPandit09/KGW',
     demoUrl: null,
     image: '/projects/kulswamini.webp',
+  },
+  {
+    slug: 'ai-product-intelligence',
+    number: '05',
+    title: 'AI-Powered Product Intelligence',
+    tagline: 'Lead-Generation Platform · Adlers Den',
+    description:
+      'AI-driven product intelligence and lead-generation platform built and shipped during the Adlers Den AI internship, live in production.',
+    problem:
+      'Adlers Den needed a faster way to identify and qualify potential leads. Manual prospecting was slow, inconsistent, and hard to scale across markets.',
+    approach:
+      'Built an AI-powered pipeline that gathers product and market signals, enriches them with LLM-based analysis, and surfaces qualified leads through a clean web dashboard deployed on Vercel.',
+    outcome:
+      'Delivered a production system used by the Adlers Den team, turning hours of manual research into an automated flow with a live, shareable dashboard.',
+    stack: ['Next.js', 'TypeScript', 'LLM APIs', 'Vercel'],
+    githubUrl: null,
+    demoUrl: 'https://adlersden-leadgen.vercel.app/',
+    image: null,
+  },
+  {
+    slug: 'ai-competitor-analysis',
+    number: '06',
+    title: 'AI-Powered Competitor Analysis',
+    tagline: 'Agentic Benchmarking Tool · Adlers Den',
+    description:
+      'Agentic pipeline that scrapes, analyzes, and benchmarks competitor products — built during the Adlers Den AI internship and live in production.',
+    problem:
+      'Understanding a crowded competitive landscape meant manually visiting dozens of competitor sites, comparing features and pricing by hand, and repeating it all as the market shifted.',
+    approach:
+      'Engineered an agentic workflow: agents scrape competitor products, an LLM layer extracts and normalizes features and positioning, and a benchmarking view presents side-by-side comparisons.',
+    outcome:
+      'Shipped a live tool that produces up-to-date competitor benchmarks on demand, replacing ad-hoc spreadsheet research.',
+    stack: ['Next.js', 'AI Agents', 'LLM APIs', 'Vercel'],
+    githubUrl: null,
+    demoUrl: 'https://part-a-v2.vercel.app/',
+    image: null,
   },
 ];

@@ -4,7 +4,7 @@ import { motion, type Variants } from 'framer-motion';
 type Tone = 'progress' | 'built' | 'hold';
 
 const workingOn: { emoji: string; title: string; desc: string; status: string; tone: Tone }[] = [
-  { emoji: '🧠', title: 'AI-Powered Product Intelligence', desc: 'Building an agentic pipeline that scrapes, analyzes, and benchmarks competitor products.', status: 'In Progress', tone: 'progress' },
+  { emoji: '🧠', title: 'AI-Powered Product Intelligence', desc: 'AI lead-generation and product intelligence platform built at Adlers Den — live in production.', status: 'Built', tone: 'built' },
   { emoji: '⚡', title: 'Blockchain Energy Protocol', desc: 'Decentralized microgrid with zk-proof privacy and RL-based dynamic pricing.', status: 'Built', tone: 'built' },
   { emoji: '🌾', title: 'Smart Farming Platform', desc: 'Krushi-Mitra AI with real-time NDVI monitoring and disease detection — partially built, currently on hold.', status: 'On Hold', tone: 'hold' },
 ];

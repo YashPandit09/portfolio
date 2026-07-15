@@ -59,9 +59,11 @@ export default async function ProjectDetailPage({ params }: { params: Params }) 
           </div>
 
           <div className="project-detail-links">
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-              View on GitHub
-            </a>
+            {project.githubUrl && (
+              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                View on GitHub
+              </a>
+            )}
             {project.demoUrl && (
               <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Live Demo

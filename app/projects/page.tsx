@@ -30,13 +30,20 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div key={project.slug} className="project-card">
                 <div className="project-card-img">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={600}
-                    height={300}
-                    style={{ objectFit: 'cover' }}
-                  />
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={600}
+                      height={300}
+                      style={{ objectFit: 'cover' }}
+                    />
+                  ) : (
+                    <div className="project-card-placeholder">
+                      <span className="placeholder-prompt">{'> '}{project.slug}</span>
+                      <span className="placeholder-title">{project.title}</span>
+                    </div>
+                  )}
                   <span className="project-card-number">{project.number}</span>
                 </div>
                 <div className="project-card-body">
@@ -54,9 +61,11 @@ export default function ProjectsPage() {
                         Live Demo ↗
                       </a>
                     )}
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="link-github">
-                      GitHub
-                    </a>
+                    {project.githubUrl && (
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="link-github">
+                        GitHub
+                      </a>
+                    )}
                     <Link href={`/projects/${project.slug}`} className="link-detail">
                       Read More →
                     </Link>

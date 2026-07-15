@@ -12,7 +12,7 @@ interface Item {
 
 const experience: Item[] = [
   {
-    logo: undefined, // TODO: '/logos/adlersden.png' — drop the logo file in public/logos
+    logo: '/logos/AdlersDen.png',
     fallback: '🤖',
     title: 'AI Intern',
     subtitle: 'Adlers Den · 3-month internship',
