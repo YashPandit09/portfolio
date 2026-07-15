@@ -12,6 +12,13 @@ interface Item {
 
 const experience: Item[] = [
   {
+    logo: undefined, // TODO: '/logos/adlersden.png' — drop the logo file in public/logos
+    fallback: '🤖',
+    title: 'AI Intern',
+    subtitle: 'Adlers Den · 3-month internship',
+    desc: 'Worked on applied AI projects, building and integrating machine-learning features into real products.',
+  },
+  {
     logo: '/logos/bluestock.webp',
     fallback: '💼',
     title: 'Software Developer Intern',
