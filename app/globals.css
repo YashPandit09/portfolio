@@ -90,15 +90,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
-.nav-resume {
+/* Higher specificity than `.nav-links a`, which otherwise wins and zeroes the padding */
+.nav-links a.nav-resume {
   display: inline-flex; align-items: center; gap: 0.55rem;
-  padding: 0.65rem 1.6rem; margin-left: 0.5rem; border-radius: 999px;
+  padding: 0.65rem 1.5rem; margin-left: 0.5rem; border-radius: 999px;
   font-size: 0.85rem; font-weight: 600; letter-spacing: 0.3px; line-height: 1;
-  background: var(--gradient-accent); color: #0D1117 !important;
+  background: var(--gradient-accent); color: #0D1117;
   transition: transform var(--transition), box-shadow var(--transition);
 }
-.nav-resume::after { display: none !important; }
-.nav-resume:hover { transform: translateY(-2px); box-shadow: 0 4px 20px var(--accent-glow); }
+.nav-links a.nav-resume::after { display: none; }
+.nav-links a.nav-resume:hover { color: #0D1117; transform: translateY(-2px); box-shadow: 0 4px 20px var(--accent-glow); }
 .resume-dot {
   width: 8px; height: 8px; border-radius: 50%; background: var(--success);
   box-shadow: 0 0 0 3px rgba(63, 185, 80, 0.3); flex-shrink: 0;
